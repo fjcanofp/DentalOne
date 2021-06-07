@@ -1,6 +1,9 @@
 package com.example.dentalone;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.view.Menu;
 
@@ -30,8 +33,16 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                /*Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();*/
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("*/*");
+                intent.putExtra(Intent.EXTRA_EMAIL, "DentalOne@protesisdental.com");
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Dental One");
+
+                if (intent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(intent);
+                }
             }
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -39,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_somos,R.id.nav_tarifas2,R.id.nav_contacts,R.id.nav_folletos,R.id.nav_especialidades2)
+                R.id.nav_home,R.id.nav_tarifas, R.id.nav_somos,R.id.nav_contacto,R.id.nav_folleto,R.id.nav_especialidades)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -59,5 +70,14 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void abrirPDFOrtodonciafija(View view)
+    {
+        Uri webpage = Uri.parse("https://drive.google.com/file/d/148W2lZKXl86YJzMs8oEYSj0eap3lcIwB/view?usp=sharing");
+        Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+        if (webIntent.resolveActivity(getPackageManager()) != null) {
+            startActivity(webIntent);
+        }
     }
 }

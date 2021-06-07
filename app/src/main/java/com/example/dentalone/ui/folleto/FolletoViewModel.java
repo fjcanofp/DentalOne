@@ -11,6 +11,7 @@ public class FolletoViewModel extends ViewModel {
     public FolletoViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is folleto fragment");
+
     }
 
     public LiveData<String> getText() {

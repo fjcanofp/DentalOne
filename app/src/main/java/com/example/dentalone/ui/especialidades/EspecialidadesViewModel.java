@@ -10,7 +10,13 @@ public class EspecialidadesViewModel extends ViewModel {
 
     public EspecialidadesViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is especialidades fragment");
+        mText.setValue("Nuestras especialidades:\n\u1405\tOrtodoncia.\n" +
+                "\u1405\tPrótesis Fijas.\n" +
+                "\u1405\tPrótesis Removibles.\n" +
+                "\u1405\tImplantes.\n" +
+                "\u1405\tFérulas de blanqueamiento, contención y descarga.\n" +
+                "\u1405\tCerámica. \n" +
+                "\u1405\tCAD-CAM.");
     }
 
     public LiveData<String> getText() {

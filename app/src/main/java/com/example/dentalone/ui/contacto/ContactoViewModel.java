@@ -10,7 +10,11 @@ public class ContactoViewModel extends ViewModel {
 
     public ContactoViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("Calle Don Alberto,7\n" +
+                "Metro Sol, Línea 1, línea 2 y línea 3\n" +
+                "Correo electrónico: DentalOne@protesisdental.com\n" +
+                "Tlf.: 639485768 / 915637584\n" +
+                "Fax: 918273647");
     }
 
     public LiveData<String> getText() {

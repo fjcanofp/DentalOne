@@ -12,31 +12,31 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_tarifas2"
+        android:id="@+id/nav_tarifas"
         android:name="com.example.dentalone.ui.tarifas.TarifasFragment"
         android:label="@string/menu_tarifas"
         tools:layout="@layout/fragment_tarifas" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_somos"
         android:name="com.example.dentalone.ui.somos.SomosFragment"
         android:label="@string/menu_somos"
         tools:layout="@layout/fragment_somos" />
 
     <fragment
-        android:id="@+id/nav_contacts"
+        android:id="@+id/nav_contacto"
         android:name="com.example.dentalone.ui.contacto.ContactoFragment"
         android:label="@string/menu_contacto"
         tools:layout="@layout/fragment_contacto" />
 
     <fragment
-        android:id="@+id/nav_folletos"
+        android:id="@+id/nav_folleto"
         android:name="com.example.dentalone.ui.folleto.FolletoFragment"
         android:label="@string/menu_folleto"
         tools:layout="@layout/fragment_folleto" />
 
     <fragment
-        android:id="@+id/nav_especialidades2"
+        android:id="@+id/nav_especialidades"
         android:name="com.example.dentalone.ui.especialidades.EspecialidadesFragment"
         android:label="@string/menu_especialidades"
         tools:layout="@layout/fragment_especialidades" />

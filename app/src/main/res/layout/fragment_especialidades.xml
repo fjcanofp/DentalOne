@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.especialidades.EspecialidadesFragment">
+
     <TextView
         android:id="@+id/text_especialidades"
         android:layout_width="match_parent"
@@ -16,6 +17,18 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuestros especialistas Todos nuestros especialistas cumplen con la Ley 10/1986, que define los requisitos que deben cumplir todos los Protésicos Dentales.  Garantía sanitaria de los productos Todos nuestros productos cumplen con la normativa, tienen la conformidad del fabricante según el Real Decreto 1591/2009; y, también, tienen la marca CEE (Comunidad Económica Europea)."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_especialidades" />
 </androidx.constraintlayout.widget.ConstraintLayout>

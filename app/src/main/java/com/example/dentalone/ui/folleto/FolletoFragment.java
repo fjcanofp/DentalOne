@@ -25,7 +25,7 @@ public class FolletoFragment extends Fragment
         folletoViewModel =
                 new ViewModelProvider( this).get(FolletoViewModel.class);
         View root = inflater.inflate(R.layout.fragment_folleto, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
+        final TextView textView = root.findViewById(R.id.text_folleto);
         folletoViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

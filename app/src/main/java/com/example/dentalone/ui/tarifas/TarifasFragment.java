@@ -27,7 +27,7 @@ public class TarifasFragment extends Fragment
         tarifasViewModel =
                 new ViewModelProvider((ViewModelStoreOwner) this).get(TarifasViewModel.class);
         View root = inflater.inflate(R.layout.fragment_tarifas, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
+        final TextView textView = root.findViewById(R.id.text_tarifas);
         tarifasViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
