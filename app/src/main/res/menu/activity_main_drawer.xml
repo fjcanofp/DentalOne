@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_menu_mapmode"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_tarifas"
+            android:icon="@android:drawable/ic_menu_directions"
+            android:title="@string/menu_tarifas" />
+
+        <item
+            android:id="@+id/nav_somos"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="@string/menu_quienes_somos" />
+
+        <item
+            android:id="@+id/nav_contacto"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="@string/menu_contacto" />
+
+        <item
+            android:id="@+id/nav_folleto"
+            android:icon="@android:drawable/ic_input_get"
+            android:title="@string/menu_folleto" />
+
+        <item
+            android:id="@+id/nav_especialidades"
+            android:icon="@android:drawable/ic_menu_sort_alphabetically"
+            android:title="@string/menu_especialidades" />
+
+    </group>
+</menu>

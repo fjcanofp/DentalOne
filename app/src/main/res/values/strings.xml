@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DentalOne</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_quienes_somos">¿Quienes somos?</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_folleto">Folleto</string>
+    <string name="menu_especialidades">Nuestras especialidades y productos</string>
+    <string name="menu_somos">menu_somos</string>
+    <string name="menu_tarifas">menu_tarifas</string>
+
+</resources>
