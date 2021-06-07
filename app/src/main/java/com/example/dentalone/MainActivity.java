@@ -36,9 +36,10 @@ public class MainActivity extends AppCompatActivity {
                 /*Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();*/
                 Intent intent = new Intent(Intent.ACTION_SEND);
-                intent.setType("*/*");
-                intent.putExtra(Intent.EXTRA_EMAIL, "DentalOne@protesisdental.com");
-                intent.putExtra(Intent.EXTRA_SUBJECT, "Dental One");
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_SUBJECT,"Consultador");
+                intent.putExtra(Intent.EXTRA_TEXT,"Me gustaría contactar con ustedes acerca de...");
+                intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"DentalOne@protesisdental.com"});
 
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
