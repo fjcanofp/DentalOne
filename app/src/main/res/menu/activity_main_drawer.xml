@@ -38,11 +38,11 @@
             android:icon="@android:drawable/ic_menu_sort_alphabetically"
             android:title="@string/menu_especialidades"
             android:textColor="@color/blue"/>
+
         <item
             android:id="@+id/nav_cadcam"
             android:icon="@drawable/ic_menu_manage"
             android:title="@string/menu_cadcam"
             android:textColor="@color/blue"/>
-
     </group>
 </menu>

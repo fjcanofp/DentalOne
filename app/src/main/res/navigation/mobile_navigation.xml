@@ -43,7 +43,7 @@
 
     <fragment
         android:id="@+id/nav_cadcam"
-        android:name="com.example.dentalone.ui.planosMaquinas.PlanoFragment"
+        android:name="com.example.dentalone.ui.cadcam.CADCAMFragment"
         android:label="@string/menu_cadcam"
         tools:layout="@layout/fragment_cadcam" />
 

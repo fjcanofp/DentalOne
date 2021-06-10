@@ -10,7 +10,7 @@ public class CADCAMViewModel extends ViewModel {
 
     public CADCAMViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Haga click aquí para acceder al CAD-CAM");
+        mText.setValue("Haga click aquí para acceder al CAD-CAM.");
     }
 
     public LiveData<String> getText() {
