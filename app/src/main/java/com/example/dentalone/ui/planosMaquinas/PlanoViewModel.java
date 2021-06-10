@@ -1,20 +1,16 @@
-package com.example.dentalone.ui.folleto;
-
-import android.content.Intent;
-import android.net.Uri;
+package com.example.dentalone.ui.planosMaquinas;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class FolletoViewModel extends ViewModel {
+public class PlanoViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public FolletoViewModel() {
+    public PlanoViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Haga click para ver nuestro folleto");
-
+        mText.setValue("Haga click aquí para acceder al plano y maquinaria de nuestra clínica");
     }
 
     public LiveData<String> getText() {

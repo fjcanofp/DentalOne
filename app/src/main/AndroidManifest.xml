@@ -32,6 +32,10 @@
                 <!--<data android:host="..." />-->
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="pspdfkit_license_key"
+            android:value="YOUR_LICENSE_KEY_GOES_HERE" />
+        android:name="androidx.multidex.MultiDexApplication" >
     </application>
 
 </manifest>

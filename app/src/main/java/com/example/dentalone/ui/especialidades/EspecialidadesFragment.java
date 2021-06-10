@@ -13,7 +13,6 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.dentalone.R;
-import com.example.dentalone.ui.contacto.ContactoViewModel;
 
 public class EspecialidadesFragment extends Fragment
 {

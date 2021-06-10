@@ -12,7 +12,8 @@
     <string name="menu_contacto">Contacto</string>
     <string name="menu_folleto">Folleto</string>
     <string name="menu_especialidades">Especialidades y productos</string>
-    <string name="menu_somos">menu_somos</string>
-    <string name="menu_tarifas">menu_tarifas</string>
+    <string name="menu_tarifas">Tarifas</string>
+    <string name="menu_cadcam"> CAD-CAM</string>
+    <string name="menu_plano"> Plano y máquinas </string>
 
 </resources>

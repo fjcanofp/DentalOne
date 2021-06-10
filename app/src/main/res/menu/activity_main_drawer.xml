@@ -7,31 +7,42 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@android:drawable/ic_menu_mapmode"
-            android:title="@string/menu_home" />
+            android:title="@string/menu_home"
+            android:textColor="@color/blue"/>/>
         <item
             android:id="@+id/nav_tarifas"
             android:icon="@android:drawable/ic_menu_directions"
-            android:title="@string/menu_tarifas" />
+            android:title="@string/menu_tarifas"
+            android:textColor="@color/blue"/>/>
 
         <item
             android:id="@+id/nav_somos"
             android:icon="@android:drawable/ic_menu_myplaces"
-            android:title="@string/menu_quienes_somos" />
+            android:title="@string/menu_quienes_somos"
+            android:textColor="@color/blue"/>/>
 
         <item
-            android:id="@+id/nav_contacto"
-            android:icon="@android:drawable/ic_dialog_email"
-            android:title="@string/menu_contacto" />
+            android:id="@+id/nav_plano"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/menu_plano"
+            android:textColor="@color/blue"/>
 
         <item
             android:id="@+id/nav_folleto"
             android:icon="@android:drawable/ic_input_get"
-            android:title="@string/menu_folleto" />
+            android:title="@string/menu_folleto"
+            android:textColor="@color/blue"/>
 
         <item
             android:id="@+id/nav_especialidades"
             android:icon="@android:drawable/ic_menu_sort_alphabetically"
-            android:title="@string/menu_especialidades" />
+            android:title="@string/menu_especialidades"
+            android:textColor="@color/blue"/>
+        <item
+            android:id="@+id/nav_cadcam"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_cadcam"
+            android:textColor="@color/blue"/>
 
     </group>
 </menu>

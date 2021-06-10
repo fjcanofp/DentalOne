@@ -1,4 +1,4 @@
-package com.example.dentalone.ui.contacto;
+package com.example.dentalone.ui.cadcam;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.dentalone.R;
 
-public class ContactoFragment extends Fragment
+public class CADCAMFragment extends Fragment
 {
-    private ContactoViewModel contactoViewModel;
+    private CADCAMViewModel cadcamViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        contactoViewModel =
-                new ViewModelProvider(this).get(ContactoViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_contacto, container, false);
-        final TextView textView = root.findViewById(R.id.text_contacto);
-        contactoViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        cadcamViewModel =
+                new ViewModelProvider(this).get(CADCAMViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_cadcam, container, false);
+        final TextView textView = root.findViewById(R.id.text_cadcam);
+        cadcamViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

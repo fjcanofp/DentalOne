@@ -20,14 +20,14 @@
     <fragment
         android:id="@+id/nav_somos"
         android:name="com.example.dentalone.ui.somos.SomosFragment"
-        android:label="@string/menu_somos"
+        android:label="@string/menu_quienes_somos"
         tools:layout="@layout/fragment_somos" />
 
     <fragment
-        android:id="@+id/nav_contacto"
-        android:name="com.example.dentalone.ui.contacto.ContactoFragment"
+        android:id="@+id/nav_plano"
+        android:name="com.example.dentalone.ui.planosMaquinas.PlanoFragment"
         android:label="@string/menu_contacto"
-        tools:layout="@layout/fragment_contacto" />
+        tools:layout="@layout/fragment_plano" />
 
     <fragment
         android:id="@+id/nav_folleto"
@@ -40,5 +40,11 @@
         android:name="com.example.dentalone.ui.especialidades.EspecialidadesFragment"
         android:label="@string/menu_especialidades"
         tools:layout="@layout/fragment_especialidades" />
+
+    <fragment
+        android:id="@+id/nav_cadcam"
+        android:name="com.example.dentalone.ui.planosMaquinas.PlanoFragment"
+        android:label="@string/menu_cadcam"
+        tools:layout="@layout/fragment_cadcam" />
 
 </navigation>

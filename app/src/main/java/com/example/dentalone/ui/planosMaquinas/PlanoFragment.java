@@ -1,6 +1,5 @@
-package com.example.dentalone.ui.folleto;
+package com.example.dentalone.ui.planosMaquinas;
 
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,23 +13,25 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.dentalone.R;
-import com.github.barteksc.pdfviewer.PDFView;
 
-public class FolletoFragment extends Fragment
+public class PlanoFragment extends Fragment
 {
-    private FolletoViewModel folletoViewModel;
+    private PlanoViewModel contactoViewModel;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        folletoViewModel =                new ViewModelProvider( this).get(FolletoViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_folleto, container, false);
-        final TextView textView = root.findViewById(R.id.text_folleto);
-        folletoViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        contactoViewModel =
+                new ViewModelProvider(this).get(PlanoViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_plano, container, false);
+        final TextView textView = root.findViewById(R.id.text_plano);
+        contactoViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
         });
-
         return root;
     }
 }
+
+
